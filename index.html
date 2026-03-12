@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Blog Personal</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+<h1>Mi Blog Personal</h1>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#sobre">Sobre mí</a>
+<a href="#habilidades">Habilidades</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#contacto">Contacto</a>
+</nav>
+</header>
+
+<main>
+
+<section id="inicio" class="inicio">
+<h2>Bienvenido!</h2>
+<p>Soy un estudiante de programación en formación.</p>
+<br>
+<img src="images/perfil.jpg" class="foto">
+</section>
+
+<section id="sobre">
+<h2>Sobre mí</h2>
+<p>Hola, mi nombre es Gianluca. Tengo 18 años y me interesa la tecnologia y los videojuegos.
+Actualmente estoy aprendiendo HTML, CSS y JavaScript en el curso de certus de Programacion desde Cero. 
+Esto, debido a que quiero familiarizarme con la programacion antes de iniciar mi carrera profesional como ingeniero de sistemas. 
+Como trabajo final elabore este blog en donde implemente gran parte de lo que me enseñaron en el curso. Sin nada mas que decir, explora mi blog a tu gusto.</p>
+</section>
+
+<section id="habilidades">
+<h2>Habilidades en programación</h2>
+
+<table>
+<thead>
+<tr>
+<th>Tecnología</th>
+<th>Nivel</th>
+</tr>
+</thead>
+
+<tbody id="tablaHabilidades">
+</tbody>
+
+</table>
+</section>
+
+<section id="proyectos">
+
+<h2>Portafolio</h2>
+
+<div class="contenedor-proyectos">
+
+<div class="tarjeta">
+
+<h3>Formulario de Registro</h3>
+
+<form>
+
+<label>Nombre completo</label>
+<input type="text" required>
+
+<label>Correo electrónico</label>
+<input type="email" required>
+
+<label>Mensaje</label>
+<textarea rows="3" required></textarea>
+
+<button type="submit">Registrarse</button>
+
+</form>
+
+</div>
+
+<div class="tarjeta">
+
+<h3>Horario Académico</h3>
+
+<table>
+
+<tr>
+<th>Hora</th>
+<th>Lunes</th>
+<th>Martes</th>
+</tr>
+
+<tr>
+<td>8:00 - 9:00</td>
+<td>Programación</td>
+<td>Matemática</td>
+</tr>
+
+<tr>
+<td>9:00 - 10:00</td>
+<td>Base de Datos</td>
+<td>Inglés</td>
+</tr>
+
+<tr>
+<td>10:00 - 11:00</td>
+<td colspan="2">Proyecto Grupal</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="tarjeta tarjeta-personal">
+
+<h3>Tarjeta personal</h3>
+
+<img src="images/perfil.jpg">
+
+<h4>Gianluca</h4>
+
+<p>Estudiante de Ingeniería de Sistemas</p>
+
+<div class="mini-habilidades">
+<span>HTML</span>
+<span>CSS</span>
+<span>GitHub</span>
+</div>
+
+<p><em>Intenta clickear el mensaje</em></p>
+<br>
+
+<button onclick="verPerfil()">Ver Perfil</button>
+
+<p id="perfilMensaje"></p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2>Contacto</h2>
+
+<form onsubmit="return validarFormulario()">
+
+<label>Nombre</label>
+<input type="text" id="nombre">
+
+<label>Correo</label>
+<input type="email" id="correo">
+
+<label>Mensaje</label>
+<textarea id="mensaje" rows="4"></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+<p id="mensajeFormulario"></p>
+
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 - Mi Portal Personal</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
